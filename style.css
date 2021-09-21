@@ -349,15 +349,11 @@ body {
 }
 
 .signup-image {
-    margin: 0 55px;
+    margin: 0 55px 0 0;
 }
 
 .form-title {
     margin-bottom: 33px;
-}
-
-.signup-image {
-    margin-top: 45px;
 }
 
 figure {
@@ -385,7 +381,8 @@ figure {
     background: #3b5998;
 }
 
-#signin {
+#signin,
+#signup {
     margin-top: 16px;
     width: 100%;
 }
