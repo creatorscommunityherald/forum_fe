@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 :root {
   --primary-color: #007AF3;
 }
@@ -17,7 +17,7 @@ body {
 .navbar .logo {
   text-decoration: none;
   font-weight: 700;
-  color: #000000;
+  color: #193366;
   font-size: 1.2em;
 }
 
@@ -33,6 +33,8 @@ body {
 
 .navbar nav {
   display: none;
+  padding-bottom: 0;
+  padding-left: 20%;
 }
 
 .navbar .container {
@@ -80,10 +82,16 @@ section {
   color: #FFFFFF;
   text-decoration: none;
   padding: .6em 1.3em;
-  font-size: 1.4em;
+  font-size: 1em;
   border-radius: .5em;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
+}
+
+.hero-left-col .primary-cta:hover {
+  background: #1c4eb3;
+  color: #FFF;
+  font-weight: 500;
 }
 
 .hero-img {
@@ -194,7 +202,7 @@ nav li a {
 }
 
 nav li a:hover {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .mobile-menu-exit {
@@ -247,15 +255,19 @@ nav li a:hover {
     font-weight: 700;
   }
   .navbar nav li.login-cta a {
-    color: var(--primary-color);
-    border: 3px solid var(--primary-color);
-    font-weight: bold;
+    color: #fff;
+    border: none;
+    background: var(--primary-color);
+    font-weight: 400;
     border-radius: .5em;
+    padding: .6em 1.3em;
     margin-top: -.2em;
   }
   .navbar nav li.login-cta a:hover {
-    background: var(--primary-color);
+    background: #1c5ee0;
     color: #FFF;
+    font-weight: 500;
+    border-radius: .5em;
   }
 }
 
@@ -265,7 +277,7 @@ nav li a:hover {
     margin: 0 auto;
   }
   section {
-    padding: 10em 4em;
+    padding: 5em 4em 10em 5em;
   }
   .hero .container {
     display: -webkit-box;
@@ -277,15 +289,40 @@ nav li a:hover {
     text-align: left;
   }
   .hero .container .hero-left-col {
-    margin: 3em 3em 0 5em;
+    margin: 5em 0 0 5em;
+  }
+  .hero .container .hero-left-col .subhead {
+    width: 60%;
   }
   .hero .container .hero-left-col h1 {
     font-size: 3em;
-    width: 90%;
+    width: 100%;
   }
   .hero-img {
-    width: 30%;
-    margin-right: 8em;
+    width: 40%;
+  }
+  .about-us .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: left;
+  }
+  .about-us .container .about-left-col {
+    width: 60%;
+  }
+  .about-us .container .about-left-col h1 {
+    font-size: 2em;
+  }
+  .about-us img {
+    width: 50%;
+    margin-right: 1em;
+  }
+  .get-started h1 {
+    text-align: center;
+    font-size: 2em;
   }
   .get-started ul {
     display: -webkit-box;
@@ -305,6 +342,9 @@ nav li a:hover {
   }
   .contact-left {
     width: 100%;
+  }
+  .contact-left h1 {
+    margin: 0;
   }
   .contact-right {
     position: relative;
