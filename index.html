@@ -6,12 +6,131 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Creator's Forum</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <h1>Hello World</h1>
-    <a href="login.html">Log In</a>
-    <a href="register.html">Register</a>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="#">Creator's<span>Community</span></a>
+            <!-- Menu for smaller screen -->
+            <img class="mobile-menu" id="mobile-cta" src="images/menu.svg" alt="Hamburger menu">
+            <nav>
+                <!-- dropmenu closing -->
+                <img src="images/exit.svg" id="mobile-exit" class="mobile-menu-exit" alt="close navigation">
+                <ul class="primary-nav">
+                    <li class="current"><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+                <ul class="secondary-nav">
+                    <li class="login-cta"><a href="">log In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-left-col">
+                <h1>A Discussion Platform For Every Creators.</h1>
+                <p class="subhead">Share your ideas, queries and group of creators will answer it for you.</p>
+
+                <div class="hero-cta">
+                    <a href="#" class="primary-cta">Get Started Now</a>
+                </div>
+            </div>
+
+            <img src="images/hero.png" alt="hero image" class="hero-img">
+        </div>
+    </section>
+
+    <section class="about-us">
+        <div class="container">
+            <div class="about-left-col">
+                <h1>About Us</h1>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum minus illo, tempore repudiandae ratione ad ducimus dolore quae fugit sequi, cum quidem id deserunt et! Consequatur, necessitatibus sequi. Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Eaque eos voluptates ad qui eligendi labore fugit quidem, ipsam nam assumenda ipsum ea quisquam amet, officia voluptatem tempora quae reprehenderit animi.
+                </p>
+                <p class="about-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam aliquid earum minus illo, tempore repudiandae ratione ad ducimus dolore quae fugit sequi, cum quidem id deserunt et! Consequatur, necessitatibus sequi. Lorem ipsum dolor sit
+                    amet consectetur, adipisicing elit. Eaque eos voluptates ad qui eligendi labore fugit quidem, ipsam nam assumenda ipsum ea quisquam amet, officia voluptatem tempora quae reprehenderit animi.
+                </p>
+            </div>
+        </div>
+
+        <img src="images/aboutus.png" alt="hero image" class="aboutus-img">
+    </section>
+
+    <section class="get-started">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/register.png" alt="">
+                    <h1>Register</h1>
+                    <p>Register with username, email and password </p>
+                    <button>Learn More</button>
+
+                </li>
+                <li>
+                    <img src="images/register.png" alt="">
+                    <h1>Register</h1>
+                    <p>Some Text</p>
+                    <button>Learn More</button>
+
+                </li>
+                <li>
+                    <img src="images/register.png" alt="">
+                    <h1>Register</h1>
+                    <p>Some Text</p>
+                    <button>Learn More</button>
+
+                </li>
+                <li>
+                    <img src="images/register.png" alt="">
+                    <h1>Register</h1>
+                    <p>Some Text</p>
+                    <button>Learn More</button>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h1>Contact</h1>
+                <form action="">
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                    <input type="email" id="email" name="email" placeholder="Your Email">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send Message">
+                </form>
+            </div>
+
+            <div class="contact-right">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.1689619429094!2d85.32856061493031!3d27.71206903189154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1910158959fb%3A0xc274a7c179f20d1a!2sHerald%20College%20Kathmandu%20New%20Facility!5e0!3m2!1sen!2snp!4v1632385266491!5m2!1sen!2snp"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav');
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+    </script>
+
 </body>
 
 </html>
