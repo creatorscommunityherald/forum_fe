@@ -104,6 +104,10 @@ section.contact-section {
   background: #FFFFFF;
 }
 
+.contact-left h1 {
+  text-align: center;
+}
+
 .about-us {
   text-align: center;
 }
@@ -122,10 +126,18 @@ section.contact-section {
   text-align: center;
 }
 
+.get-started {
+  padding: 0;
+}
+
+.get-started h1 {
+  text-align: center;
+}
+
 .get-started li {
   background: #006BD6;
   text-align: center;
-  padding: 2em 1em;
+  padding: em 1em;
   width: 80%;
   margin: 0 auto 5em auto;
   border-radius: 1em;
@@ -136,10 +148,8 @@ section.contact-section {
   height: 5em;
 }
 
-label {
-  display: block;
-  font-size: 1.2em;
-  margin-bottom: .5em;
+.contact-section {
+  padding: .5em;
 }
 
 input,
@@ -159,8 +169,7 @@ input[type=submit] {
   font-weight: 400;
   font-size: 1.3em;
   border: none;
-  padding: .8em .2em;
-  margin-bottom: 5em;
+  padding: .4em .2em;
   border-radius: .5em;
   display: inline-block;
   cursor: pointer;
@@ -334,6 +343,7 @@ nav li a:hover {
   }
   .contact-section {
     position: relative;
+    padding: 0;
   }
   .contact-section .container {
     display: -webkit-box;
@@ -344,13 +354,12 @@ nav li a:hover {
     width: 100%;
   }
   .contact-left h1 {
-    margin: 0;
+    font-size: 2em;
   }
   .contact-right {
     position: relative;
     width: 100%;
-    min-height: 1px;
-    margin: 0 15px 0 15px;
+    margin: 6em 0 0 2em;
     padding-right: 0 15px 0 15px;
   }
 }

@@ -95,6 +95,10 @@ section.contact-section {
     background: #FFFFFF
 }
 
+.contact-left h1 {
+    text-align: center;
+}
+
 .about-us {
     text-align: center;
     h1 {
@@ -113,10 +117,14 @@ section.contact-section {
 
 .get-started {
     // background: var(--primary-color);
+    padding: 0;
+    h1 {
+        text-align: center;
+    }
     li {
         background: #006BD6;
         text-align: center;
-        padding: 2em 1em;
+        padding: em 1em;
         width: 80%;
         margin: 0 auto 5em auto;
         border-radius: 1em;
@@ -127,10 +135,8 @@ section.contact-section {
     }
 }
 
-label {
-    display: block;
-    font-size: 1.2em;
-    margin-bottom: .5em;
+.contact-section {
+    padding: .5em;
 }
 
 input,
@@ -149,8 +155,8 @@ input[type=submit] {
     font-weight: 400;
     font-size: 1.3em;
     border: none;
-    padding: .8em .2em;
-    margin-bottom: 5em;
+    padding: .4em .2em;
+    // margin-bottom: 5em;
     border-radius: .5em;
     display: inline-block;
     cursor: pointer;
@@ -303,6 +309,7 @@ nav {
     }
     .contact-section {
         position: relative;
+        padding: 0;
         .container {
             display: flex;
         }
@@ -310,14 +317,13 @@ nav {
     .contact-left {
         width: 100%;
         h1 {
-            margin: 0;
+            font-size: 2em;
         }
     }
     .contact-right {
         position: relative;
         width: 100%;
-        min-height: 1px;
-        margin: 0 15px 0 15px;
+        margin: 6em 0 0 2em;
         padding-right: 0 15px 0 15px;
     }
 }
