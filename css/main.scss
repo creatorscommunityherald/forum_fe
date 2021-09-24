@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 :root {
     --primary-color: #007AF3;
 }
@@ -120,6 +120,9 @@ section.contact-section {
     padding: 0;
     h1 {
         text-align: center;
+    }
+    h2 {
+        font-weight: 600;
     }
     li {
         // background: #006BD6;
@@ -358,9 +361,21 @@ nav {
         text-align: center;
         font-size: 2em;
     }
+    .get-started h2 {
+        font-size: 1.1em;
+        font-weight: 600;
+    }
+    .get-started p {
+        color: #999999;
+        padding-bottom: 2em;
+    }
+    .get-started a {
+        padding: 0;
+    }
     .get-started ul {
         display: flex;
         li {
+            width: 25%;
             margin: 0 1em;
         }
     }
