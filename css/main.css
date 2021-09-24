@@ -434,12 +434,12 @@ nav li a:hover {
   input[type="text"],
   input[type="email"] {
     height: 4em;
-    font-size: 1em;
+    font-size: .7em;
   }
   textarea,
   input {
     font-family: 'Poppins';
-    font-size: 1em;
+    font-size: .7em;
   }
   .contact-left {
     width: 100%;
