@@ -11,7 +11,7 @@ body {
 
 .navbar {
     background: #FFFFFF;
-    padding: 1em;
+    padding: 1em 1em 1em 5em;
     .logo {
         text-decoration: none;
         font-weight: 700;
@@ -205,6 +205,41 @@ nav {
     cursor: pointer;
 }
 
+.footer-section {
+    padding: 0;
+    background: #012640;
+    padding: 1em 0 2em 1em;
+    .container {
+        display: block;
+        color: #FFF;
+    }
+    .child {
+        // width: 100%;
+        h5 {
+            font-size: 1em;
+            margin-bottom: 1em;
+            padding: 0;
+        }
+        li {
+            font-size: .8em;
+            margin: .4em 0 .4em 0;
+            i {
+                padding-right: .8em;
+            }
+            p {
+                display: inline;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+                &:hover {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width:768px) {
     .mobile-menu,
     .mobile-menu-exit {
@@ -262,7 +297,7 @@ nav {
 
 @media only screen and (min-width:1080px) {
     .container {
-        width: 1080px;
+        width: 100%;
         margin: 0 auto;
     }
     section {
@@ -317,7 +352,7 @@ nav {
     }
     .contact-section {
         position: relative;
-        padding: 0;
+        padding: 2em 4em 5em 5em;
         .container {
             display: flex;
         }
@@ -328,11 +363,41 @@ nav {
             text-align: left;
             font-size: 2em;
         }
+        #fname {
+            // position: relative;
+            width: 48.5%;
+            margin-right: 1em;
+            float: left;
+        }
+        #lname {
+            position: relative;
+            width: 48.9%;
+            float: left;
+        }
     }
     .contact-right {
         position: relative;
         width: 100%;
         margin: 6em 0 0 2em;
         padding-right: 0 15px 0 15px;
+    }
+    // footer
+    .footer-section {
+        position: relative;
+        background: #012640;
+        padding: 2em 4em 5em 5em;
+        .container {
+            display: flex;
+        }
+        .child {
+            width: 100%;
+        }
+        #child1,
+        #child2 {
+            padding-right: 7em;
+        }
+        #child3 {
+            width: 80%;
+        }
     }
 }
