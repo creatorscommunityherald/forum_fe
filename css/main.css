@@ -275,6 +275,11 @@ nav li a:hover {
   font-weight: 500;
 }
 
+.footer-section .copy {
+  font-size: .8em;
+  padding-top: 2em;
+}
+
 @media only screen and (min-width: 768px) {
   .mobile-menu,
   .mobile-menu-exit {
@@ -452,7 +457,7 @@ nav li a:hover {
   .footer-section {
     position: relative;
     background: #012640;
-    padding: 2em 4em 5em 5em;
+    padding: 2em 4em 2em 5em;
   }
   .footer-section .container {
     display: -webkit-box;
@@ -468,6 +473,9 @@ nav li a:hover {
   }
   .footer-section #child3 {
     width: 80%;
+  }
+  .footer-section .copy {
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=main.css.map */
