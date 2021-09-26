@@ -12,19 +12,25 @@ body {
 .navbar {
     background: #FFFFFF;
     padding: 1em;
-    .logo {
-        text-decoration: none;
-        font-weight: 700;
-        color: #193366;
-        font-size: 1.2em;
-        img {
-            width: 15%;
+    .logo-group {
+        .logo {
+            text-decoration: none;
+            font-weight: 700;
+            color: #193366;
+            font-size: 1.2em;
+            display: inline-block;
+            padding: .1em;
+            span {
+                color: var(--primary-color);
+                display: block;
+                line-height: .5em;
+            }
         }
-        span {
-            color: var(--primary-color);
-            display: block;
-            line-height: .5em;
-        }
+    }
+    .logo-img {
+        width: 60px;
+        height: auto;
+        vertical-align: top;
     }
     nav {
         display: none;
@@ -320,6 +326,9 @@ nav {
     }
     .navbar {
         padding: 1em 1em 1em 5em;
+        .logo-group {
+            display: flex;
+        }
     }
     section {
         padding: 5em 4em 10em 5em;

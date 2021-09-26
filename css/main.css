@@ -14,21 +14,25 @@ body {
   padding: 1em;
 }
 
-.navbar .logo {
+.navbar .logo-group .logo {
   text-decoration: none;
   font-weight: 700;
   color: #193366;
   font-size: 1.2em;
+  display: inline-block;
+  padding: .1em;
 }
 
-.navbar .logo img {
-  width: 15%;
-}
-
-.navbar .logo span {
+.navbar .logo-group .logo span {
   color: var(--primary-color);
   display: block;
   line-height: .5em;
+}
+
+.navbar .logo-img {
+  width: 60px;
+  height: auto;
+  vertical-align: top;
 }
 
 .navbar nav {
@@ -350,6 +354,11 @@ nav li a:hover {
   }
   .navbar {
     padding: 1em 1em 1em 5em;
+  }
+  .navbar .logo-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   section {
     padding: 5em 4em 10em 5em;
