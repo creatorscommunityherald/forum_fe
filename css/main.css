@@ -263,6 +263,7 @@ nav li a:hover {
 }
 
 .footer-section .child li i {
+  width: 2%;
   padding-right: .8em;
 }
 
@@ -491,7 +492,7 @@ nav li a:hover {
     padding-right: 7em;
   }
   .footer-section #child3 {
-    width: 80%;
+    width: 60%;
   }
   .footer-section .copy {
     margin: 0 auto;
